@@ -1,4 +1,5 @@
-import { Switch, Route, Router as WouterRouter } from "wouter";
+import { Switch, Route, Router as WouterRouter, useLocation } from "wouter";
+import { useEffect } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import HomePage from "@/pages/HomePage";
@@ -12,20 +13,31 @@ import ContactPage from "@/pages/ContactPage";
 import AuthorPage from "@/pages/AuthorPage";
 import NotFound from "@/pages/not-found";
 
+function ScrollToTop() {
+  const [location] = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, [location]);
+  return null;
+}
+
 function Router() {
   return (
-    <Switch>
-      <Route path="/" component={HomePage} />
-      <Route path="/print/:id" component={PrintPage} />
-      <Route path="/category/:cat" component={CategoryPage} />
-      <Route path="/about" component={AboutPage} />
-      <Route path="/about-author" component={AuthorPage} />
-      <Route path="/contact" component={ContactPage} />
-      <Route path="/privacy-policy" component={PrivacyPage} />
-      <Route path="/terms" component={TermsPage} />
-      <Route path="/disclaimer" component={DisclaimerPage} />
-      <Route component={NotFound} />
-    </Switch>
+    <>
+      <ScrollToTop />
+      <Switch>
+        <Route path="/" component={HomePage} />
+        <Route path="/print/:id" component={PrintPage} />
+        <Route path="/category/:cat" component={CategoryPage} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/about-author" component={AuthorPage} />
+        <Route path="/contact" component={ContactPage} />
+        <Route path="/privacy-policy" component={PrivacyPage} />
+        <Route path="/terms" component={TermsPage} />
+        <Route path="/disclaimer" component={DisclaimerPage} />
+        <Route component={NotFound} />
+      </Switch>
+    </>
   );
 }
 
