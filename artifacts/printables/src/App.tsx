@@ -3,6 +3,10 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import HomePage from "@/pages/HomePage";
 import PrintPage from "@/pages/PrintPage";
+import AboutPage from "@/pages/AboutPage";
+import PrivacyPage from "@/pages/PrivacyPage";
+import TermsPage from "@/pages/TermsPage";
+import DisclaimerPage from "@/pages/DisclaimerPage";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -10,6 +14,10 @@ function Router() {
     <Switch>
       <Route path="/" component={HomePage} />
       <Route path="/print/:id" component={PrintPage} />
+      <Route path="/about" component={AboutPage} />
+      <Route path="/privacy-policy" component={PrivacyPage} />
+      <Route path="/terms" component={TermsPage} />
+      <Route path="/disclaimer" component={DisclaimerPage} />
       <Route component={NotFound} />
     </Switch>
   );

@@ -1,0 +1,32 @@
+The site needs to look like a high-end corporate platform. Update the Header, Footer, and Legal pages with the following EXACT specifications:
+
+### 1. THE MEGA-HEADER (Professional Navigation)
+- STICKY NAV: The header must stay at the top with a glass-morphism effect (backdrop-blur).
+- LOGO: Place a professional logo placeholder on the left.
+- MEGA-MENU: Create a 'Categories' dropdown that reveals a multi-column grid:
+    * Column 1 (Kids): Alphabet, Math, Fruits, Vegetables, Animals, Anatomy.
+    * Column 2 (Worksheets): Master Sheets, Tracing, Dot-to-Dot, Color-by-Number.
+    * Column 3 (Adults/Others): Daily Planners, Budgeting, Mandalas, Small Biz.
+- SEARCH: A centered, wide search bar with an icon that says "Search 1000+ free printables..."
+
+### 2. THE MEGA-FOOTER (Trust & SEO)
+- 4-COLUMN LAYOUT:
+    * Col 1: About the Mission (Free education for all).
+    * Col 2: Categories (Links to Kids, Planners, Seasonal).
+    * Col 3: Legal (Privacy Policy, Terms of Service, Disclaimer, Cookie Policy).
+    * Col 4: Newsletter (An input box for "Get Free Weekly Printables").
+- SOCIAL ICONS: Add professional icons for Pinterest, Instagram, and Facebook.
+- COPYRIGHT: "© 2026 YourBrand - All Rights Reserved. Professional Free Printables."
+
+### 3. AUTOMATIC LEGAL PAGES
+- Create actual routes for: `/privacy-policy`, `/disclaimer`, `/terms-of-service`, and `/about`.
+- Populate these pages with professional, standard legal text regarding "Personal Use Only," "No Commercial Resale," and "Educational Purposes."
+
+### 4. MORE CONTENT (The "Vast" Update)
+- ADD 40+ FRUITS: Add the names and SVGs for every fruit imaginable (Pomegranate, Starfruit, Passionfruit, Mangosteen, etc.).
+- ADD MASTER WORKSHEETS: 
+    * A page with "All 30+ Fruits on One Page" (Small icons with names).
+    * A page with "A-Z tracing with 26 small objects" on one page.
+- ADD DOWNLOAD BUTTONS: Every single item must have a clear 'Download' and 'Print' icon directly visible on the card.
+
+Build this complete professional structure now.

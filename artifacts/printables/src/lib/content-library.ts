@@ -1,3 +1,5 @@
+import { ExtraLibrary } from './content-library-extra';
+
 export type Category =
   | "alphabet"
   | "numbers"
@@ -7,7 +9,8 @@ export type Category =
   | "fruits"
   | "vegetables"
   | "anatomy"
-  | "planners";
+  | "planners"
+  | "master";
 
 export interface PrintItem {
   id: string;
@@ -1759,14 +1762,18 @@ ContentLibrary.push(
   }
 );
 
-export const CATEGORY_META: Record<Category, { label: string; color: string; description: string }> = {
-  alphabet: { label: 'Alphabet', color: '#FFD6E0', description: 'A-Z uppercase & lowercase tracing sheets' },
-  numbers: { label: 'Numbers', color: '#FFECD2', description: 'Numbers 1–100 tracing worksheets' },
-  math: { label: 'Math', color: '#D4F1F4', description: 'Math symbols and operators' },
-  shapes: { label: 'Shapes', color: '#E8D5F5', description: 'Basic geometric shapes' },
-  animals: { label: 'Animals', color: '#D5F5E3', description: 'Wild and domestic animal coloring pages' },
-  fruits: { label: 'Fruits', color: '#FDE8C8', description: 'Colorful fruit illustrations to color' },
-  vegetables: { label: 'Vegetables', color: '#D5EAD9', description: 'Vegetable coloring worksheets' },
-  anatomy: { label: 'Anatomy', color: '#F9DDDD', description: 'Basic human anatomy outlines' },
-  planners: { label: 'Planners', color: '#E0E8FF', description: 'Daily, weekly & budget planners' },
+export const CATEGORY_META: Record<Category, { label: string; color: string; description: string; icon: string }> = {
+  alphabet: { label: 'Alphabet', color: '#FFD6E0', description: 'A-Z uppercase & lowercase tracing sheets', icon: '🔤' },
+  numbers: { label: 'Numbers', color: '#FFECD2', description: 'Numbers 1–100 tracing worksheets', icon: '🔢' },
+  math: { label: 'Math', color: '#D4F1F4', description: 'Math symbols, operators & fractions', icon: '➕' },
+  shapes: { label: 'Shapes', color: '#E8D5F5', description: 'Basic geometric shapes to color', icon: '⬡' },
+  animals: { label: 'Animals', color: '#D5F5E3', description: '60+ wild & domestic animal coloring pages', icon: '🦁' },
+  fruits: { label: 'Fruits', color: '#FDE8C8', description: '40+ colorful fruit illustrations', icon: '🍎' },
+  vegetables: { label: 'Vegetables', color: '#D5EAD9', description: 'Vegetable coloring worksheets', icon: '🥦' },
+  anatomy: { label: 'Anatomy', color: '#F9DDDD', description: 'Basic human anatomy outlines', icon: '🫀' },
+  planners: { label: 'Planners', color: '#E0E8FF', description: 'Daily, weekly & budget planners', icon: '📅' },
+  master: { label: 'Master Sheets', color: '#FFF3CD', description: 'Mega reference & compilation sheets', icon: '📋' },
 };
+
+// ---- Merge Extra Library ----
+ContentLibrary.push(...ExtraLibrary);
