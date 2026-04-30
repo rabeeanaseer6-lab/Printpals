@@ -12,202 +12,326 @@ interface PrintItem {
 // ════════════════════ NEW VEGETABLE SVGs ════════════════════
 
 function bellPepperSVG(): string {
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
-  <rect width="500" height="500" fill="white" stroke="#1a1a1a" stroke-width="3"/>
-  <rect x="237" y="110" width="26" height="55" rx="10" fill="none" stroke="#1a1a1a" stroke-width="4"/>
-  <path d="M255 138 Q295 118 305 96" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M245 138 Q205 118 195 96" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M160 200 Q150 170 170 158 Q195 152 210 168 Q220 152 240 148 Q260 148 270 162 Q280 148 300 148 Q320 152 330 168 Q345 152 370 158 Q390 170 340 200 Z" fill="none" stroke="#1a1a1a" stroke-width="4"/>
-  <path d="M160 200 C145 250 145 320 175 370 C205 415 295 415 325 370 C355 320 355 250 340 200" fill="none" stroke="#1a1a1a" stroke-width="4.5"/>
-  <line x1="250" y1="200" x2="250" y2="395" stroke="#1a1a1a" stroke-width="2.5"/>
-  <path d="M160 280 Q250 310 340 280" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-  <text x="250" y="460" font-family="Arial, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#555">Bell Pepper</text>
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 460" width="400" height="460">
+  <rect width="400" height="460" fill="white"/>
+  <!-- Stem -->
+  <rect x="186" y="78" width="28" height="58" rx="11" fill="none" stroke="#111" stroke-width="7"/>
+  <!-- Side tendrils from stem -->
+  <path d="M208 102 Q252 80 260 58" fill="none" stroke="#111" stroke-width="5" stroke-linecap="round"/>
+  <path d="M192 102 Q148 80 140 58" fill="none" stroke="#111" stroke-width="5" stroke-linecap="round"/>
+  <!-- Crown / top lobes -->
+  <path d="M116 192 Q105 158 128 144 Q154 136 172 154 Q184 138 204 132 Q224 132 236 148 Q248 132 268 132 Q288 136 300 154 Q318 136 346 144 Q369 158 284 192 Z" fill="none" stroke="#111" stroke-width="8" stroke-linejoin="round"/>
+  <!-- Body -->
+  <path d="M116 192 Q100 248 100 322 Q100 378 136 408 Q166 432 200 434 Q234 432 264 408 Q300 378 300 322 Q300 248 284 192" fill="none" stroke="#111" stroke-width="9"/>
+  <!-- Center vertical line -->
+  <path d="M200 192 Q200 310 200 412" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Horizontal belly line -->
+  <path d="M110 292 Q200 322 290 292" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <text x="200" y="454" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#444">Bell Pepper</text>
 </svg>`;
 }
 
 function cucumberSVG(): string {
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
-  <rect width="500" height="500" fill="white" stroke="#1a1a1a" stroke-width="3"/>
-  <ellipse cx="250" cy="255" rx="95" ry="185" fill="none" stroke="#1a1a1a" stroke-width="4.5"/>
-  <path d="M250 70 Q268 62 272 50 Q258 45 250 52 Q242 45 228 50 Q232 62 250 70Z" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M230 80 Q215 72 210 60" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-  <path d="M270 80 Q285 72 290 60" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-  <line x1="250" y1="100" x2="250" y2="410" stroke="#1a1a1a" stroke-width="2"/>
-  <line x1="190" y1="160" x2="310" y2="160" stroke="#1a1a1a" stroke-width="2"/>
-  <line x1="165" y1="210" x2="335" y2="210" stroke="#1a1a1a" stroke-width="2"/>
-  <line x1="160" y1="260" x2="340" y2="260" stroke="#1a1a1a" stroke-width="2"/>
-  <line x1="165" y1="310" x2="335" y2="310" stroke="#1a1a1a" stroke-width="2"/>
-  <line x1="185" y1="360" x2="315" y2="360" stroke="#1a1a1a" stroke-width="2"/>
-  ${[155,175,195,215,235,255,275,295,315,335].map((y,i) => `<ellipse cx="${i%2===0?220:280}" cy="${y}" rx="7" ry="5" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>`).join('')}
-  <text x="250" y="460" font-family="Arial, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#555">Cucumber</text>
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="400" height="480">
+  <rect width="400" height="480" fill="white"/>
+  <!-- Cucumber body - large vertical oval -->
+  <ellipse cx="200" cy="262" rx="100" ry="196" fill="none" stroke="#111" stroke-width="10"/>
+  <!-- Flower/blossom end cap at bottom -->
+  <path d="M200 448 Q218 436 228 448 Q218 460 200 462 Q182 460 172 448 Q182 436 200 448Z" fill="none" stroke="#111" stroke-width="5"/>
+  <!-- Stem crown at top -->
+  <path d="M200 66 Q218 58 224 44 Q208 40 200 48 Q192 40 176 44 Q182 58 200 66Z" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M178 76 Q162 68 156 54" fill="none" stroke="#111" stroke-width="5" stroke-linecap="round"/>
+  <path d="M222 76 Q238 68 244 54" fill="none" stroke="#111" stroke-width="5" stroke-linecap="round"/>
+  <!-- Horizontal lines -->
+  <line x1="166" y1="155" x2="234" y2="155" stroke="#111" stroke-width="3.5"/>
+  <line x1="144" y1="200" x2="256" y2="200" stroke="#111" stroke-width="3.5"/>
+  <line x1="136" y1="245" x2="264" y2="245" stroke="#111" stroke-width="3.5"/>
+  <line x1="136" y1="292" x2="264" y2="292" stroke="#111" stroke-width="3.5"/>
+  <line x1="142" y1="338" x2="258" y2="338" stroke="#111" stroke-width="3.5"/>
+  <line x1="162" y1="384" x2="238" y2="384" stroke="#111" stroke-width="3.5"/>
+  <!-- Vertical center line -->
+  <line x1="200" y1="100" x2="200" y2="430" stroke="#111" stroke-width="3.5"/>
+  <!-- Bumps/ridges scattered -->
+  <ellipse cx="162" cy="178" rx="9" ry="6" fill="none" stroke="#111" stroke-width="3"/>
+  <ellipse cx="238" cy="178" rx="9" ry="6" fill="none" stroke="#111" stroke-width="3"/>
+  <ellipse cx="152" cy="225" rx="9" ry="6" fill="none" stroke="#111" stroke-width="3"/>
+  <ellipse cx="248" cy="225" rx="9" ry="6" fill="none" stroke="#111" stroke-width="3"/>
+  <ellipse cx="148" cy="272" rx="9" ry="6" fill="none" stroke="#111" stroke-width="3"/>
+  <ellipse cx="252" cy="272" rx="9" ry="6" fill="none" stroke="#111" stroke-width="3"/>
+  <ellipse cx="152" cy="318" rx="9" ry="6" fill="none" stroke="#111" stroke-width="3"/>
+  <ellipse cx="248" cy="318" rx="9" ry="6" fill="none" stroke="#111" stroke-width="3"/>
+  <ellipse cx="162" cy="362" rx="9" ry="6" fill="none" stroke="#111" stroke-width="3"/>
+  <ellipse cx="238" cy="362" rx="9" ry="6" fill="none" stroke="#111" stroke-width="3"/>
+  <text x="200" y="472" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#444">Cucumber</text>
 </svg>`;
 }
 
 function cauliflowerSVG(): string {
-  const bumps = [
-    [250,145,42],[200,165,36],[300,165,36],[165,205,32],[250,185,38],[335,205,32],
-    [150,248,30],[210,230,34],[290,230,34],[350,248,30],[175,278,28],[325,278,28],
-    [250,258,36],[215,268,30],[285,268,30]
-  ];
-  const bumpStr = bumps.map(([x,y,r]) => `<circle cx="${x}" cy="${y}" r="${r}" fill="none" stroke="#1a1a1a" stroke-width="3"/>`).join('');
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
-  <rect width="500" height="500" fill="white" stroke="#1a1a1a" stroke-width="3"/>
-  ${bumpStr}
-  <path d="M130 290 Q120 340 145 370 Q185 400 250 405 Q315 400 355 370 Q380 340 370 290 Q290 310 250 308 Q210 310 130 290Z" fill="none" stroke="#1a1a1a" stroke-width="4"/>
-  <path d="M155 370 Q170 420 165 440" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M345 370 Q330 420 335 440" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M250 405 Q250 430 250 445" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <text x="250" y="485" font-family="Arial, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#555">Cauliflower</text>
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 460" width="400" height="460">
+  <rect width="400" height="460" fill="white"/>
+  <!-- Head outline -->
+  <path d="M70 268 Q58 218 78 182 Q100 146 140 138 Q158 134 176 148 Q190 128 200 118 Q210 128 224 148 Q242 134 260 138 Q300 146 322 182 Q342 218 330 268 Q312 302 258 318 Q228 326 200 326 Q172 326 142 318 Q88 302 70 268Z" fill="none" stroke="#111" stroke-width="9" stroke-linejoin="round"/>
+  <!-- Floret circles - large -->
+  <circle cx="136" cy="212" r="46" fill="none" stroke="#111" stroke-width="6"/>
+  <circle cx="200" cy="182" r="52" fill="none" stroke="#111" stroke-width="6"/>
+  <circle cx="264" cy="212" r="46" fill="none" stroke="#111" stroke-width="6"/>
+  <circle cx="106" cy="256" r="36" fill="none" stroke="#111" stroke-width="5.5"/>
+  <circle cx="294" cy="256" r="36" fill="none" stroke="#111" stroke-width="5.5"/>
+  <!-- Top smaller bumps -->
+  <circle cx="160" cy="154" r="28" fill="none" stroke="#111" stroke-width="5"/>
+  <circle cx="200" cy="144" r="30" fill="none" stroke="#111" stroke-width="5"/>
+  <circle cx="240" cy="154" r="28" fill="none" stroke="#111" stroke-width="5"/>
+  <!-- Leaves / base -->
+  <path d="M80 268 Q66 318 90 348 Q132 384 200 390 Q268 384 310 348 Q334 318 320 268 Q278 296 200 298 Q122 296 80 268Z" fill="none" stroke="#111" stroke-width="8" stroke-linejoin="round"/>
+  <!-- Leaf veins -->
+  <path d="M98 342 Q112 396 108 422" fill="none" stroke="#111" stroke-width="5" stroke-linecap="round"/>
+  <path d="M302 342 Q288 396 292 422" fill="none" stroke="#111" stroke-width="5" stroke-linecap="round"/>
+  <path d="M200 390 Q200 416 200 432" fill="none" stroke="#111" stroke-width="5" stroke-linecap="round"/>
+  <text x="200" y="454" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#444">Cauliflower</text>
 </svg>`;
 }
 
 function eggplantSVG(): string {
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
-  <rect width="500" height="500" fill="white" stroke="#1a1a1a" stroke-width="3"/>
-  <rect x="237" y="88" width="26" height="60" rx="10" fill="none" stroke="#1a1a1a" stroke-width="4"/>
-  <path d="M250 148 Q210 148 195 155 Q180 165 175 175 L175 165 Q180 148 210 140Z" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M250 148 Q290 148 305 155 Q320 165 325 175 L325 165 Q320 148 290 140Z" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M175 175 Q155 165 155 178 Q155 192 175 185Z" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M325 175 Q345 165 345 178 Q345 192 325 185Z" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <ellipse cx="250" cy="310" rx="125" ry="165" fill="none" stroke="#1a1a1a" stroke-width="4.5"/>
-  <ellipse cx="250" cy="145" rx="18" ry="8" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-  <text x="250" y="500" font-family="Arial, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#555">Eggplant</text>
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="400" height="480">
+  <rect width="400" height="480" fill="white"/>
+  <!-- Stem -->
+  <rect x="185" y="68" width="30" height="65" rx="12" fill="none" stroke="#111" stroke-width="7"/>
+  <!-- Crown sepals -->
+  <path d="M200 133 Q158 133 142 142 Q126 154 122 168 L122 155 Q128 130 162 124Z" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M200 133 Q242 133 258 142 Q274 154 278 168 L278 155 Q272 130 238 124Z" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round"/>
+  <!-- Sepal ear left -->
+  <path d="M122 168 Q100 156 100 172 Q100 188 122 182Z" fill="none" stroke="#111" stroke-width="5.5" stroke-linejoin="round"/>
+  <!-- Sepal ear right -->
+  <path d="M278 168 Q300 156 300 172 Q300 188 278 182Z" fill="none" stroke="#111" stroke-width="5.5" stroke-linejoin="round"/>
+  <!-- Body - large oval, fills the card -->
+  <ellipse cx="200" cy="322" rx="132" ry="172" fill="none" stroke="#111" stroke-width="10"/>
+  <!-- Shine highlight -->
+  <path d="M108 242 Q92 278 100 318" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <text x="200" y="474" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#444">Eggplant</text>
 </svg>`;
 }
 
 function mushroomSVG(): string {
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
-  <rect width="500" height="500" fill="white" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M80 265 Q75 140 250 95 Q425 140 420 265Z" fill="none" stroke="#1a1a1a" stroke-width="4.5"/>
-  <path d="M80 265 Q120 285 250 280 Q380 285 420 265" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <rect x="198" y="265" width="104" height="160" rx="18" fill="none" stroke="#1a1a1a" stroke-width="4"/>
-  <ellipse cx="175" cy="185" rx="28" ry="32" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <ellipse cx="250" cy="155" rx="32" ry="38" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <ellipse cx="325" cy="185" rx="28" ry="32" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M80 265 Q120 295 198 300" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-  <path d="M420 265 Q380 295 302 300" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-  <text x="250" y="458" font-family="Arial, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#555">Mushroom</text>
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 440" width="400" height="440">
+  <rect width="400" height="440" fill="white"/>
+  <!-- Cap - large dome -->
+  <path d="M58 268 Q52 142 200 92 Q348 142 342 268Z" fill="none" stroke="#111" stroke-width="10" stroke-linejoin="round"/>
+  <!-- Cap underside / gills line -->
+  <path d="M58 268 Q102 292 200 286 Q298 292 342 268" fill="none" stroke="#111" stroke-width="6" stroke-linecap="round"/>
+  <!-- Stem - wide and prominent -->
+  <path d="M152 268 Q138 352 136 390 Q134 420 158 430 Q200 440 242 430 Q266 420 264 390 Q262 352 248 268 Z" fill="none" stroke="#111" stroke-width="9" stroke-linejoin="round"/>
+  <!-- Stem center line -->
+  <path d="M200 268 Q200 352 200 416" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Spots on cap -->
+  <ellipse cx="166" cy="188" r="32" fill="none" stroke="#111" stroke-width="6"/>
+  <ellipse cx="248" cy="158" r="36" fill="none" stroke="#111" stroke-width="6"/>
+  <ellipse cx="320" cy="194" r="28" fill="none" stroke="#111" stroke-width="5.5"/>
+  <!-- Gill lines under cap -->
+  <path d="M72 272 Q118 300 152 300" fill="none" stroke="#111" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M328 272 Q282 300 248 300" fill="none" stroke="#111" stroke-width="3.5" stroke-linecap="round"/>
+  <text x="200" y="436" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#444">Mushroom</text>
 </svg>`;
 }
 
 function garlicSVG(): string {
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
-  <rect width="500" height="500" fill="white" stroke="#1a1a1a" stroke-width="3"/>
-  <ellipse cx="250" cy="280" rx="155" ry="145" fill="none" stroke="#1a1a1a" stroke-width="4.5"/>
-  <ellipse cx="195" cy="260" rx="65" ry="95" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <ellipse cx="305" cy="260" rx="65" ry="95" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <ellipse cx="250" cy="245" rx="58" ry="90" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M165 200 Q250 195 335 200" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-  <path d="M250 135 Q238 115 238 98 Q245 88 250 92 Q255 88 262 98 Q262 115 250 135Z" fill="none" stroke="#1a1a1a" stroke-width="3.5"/>
-  <path d="M210 145 Q200 120 205 105" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-  <path d="M290 145 Q300 120 295 105" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-  <text x="250" y="462" font-family="Arial, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#555">Garlic</text>
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 460" width="400" height="460">
+  <rect width="400" height="460" fill="white"/>
+  <!-- Outer bulb -->
+  <ellipse cx="200" cy="290" rx="130" ry="140" fill="none" stroke="#111" stroke-width="10"/>
+  <!-- Clove division lines -->
+  <path d="M200 152 Q166 158 158 202 Q150 244 176 270 Q200 290 200 290" fill="none" stroke="#111" stroke-width="5.5" stroke-linecap="round"/>
+  <path d="M200 152 Q234 158 242 202 Q250 244 224 270 Q200 290 200 290" fill="none" stroke="#111" stroke-width="5.5" stroke-linecap="round"/>
+  <path d="M200 152 Q134 155 122 210 Q110 258 140 278 Q170 296 200 290" fill="none" stroke="#111" stroke-width="5.5" stroke-linecap="round"/>
+  <path d="M200 152 Q266 155 278 210 Q290 258 260 278 Q230 296 200 290" fill="none" stroke="#111" stroke-width="5.5" stroke-linecap="round"/>
+  <!-- Neck -->
+  <path d="M175 152 Q178 116 186 96 Q192 78 200 62 Q208 78 214 96 Q222 116 225 152" fill="none" stroke="#111" stroke-width="8" stroke-linecap="round"/>
+  <!-- Sprouts -->
+  <path d="M190 64 Q184 36 180 14" fill="none" stroke="#111" stroke-width="6" stroke-linecap="round"/>
+  <path d="M210 64 Q216 36 220 14" fill="none" stroke="#111" stroke-width="6" stroke-linecap="round"/>
+  <!-- Roots -->
+  <path d="M148 424 Q142 440 138 452" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M172 428 Q170 444 168 456" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M200 430 Q200 446 200 458" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M228 428 Q230 444 232 456" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M252 424 Q258 440 262 452" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <text x="200" y="456" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#444">Garlic</text>
 </svg>`;
 }
 
 function pumpkinSVG(): string {
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
-  <rect width="500" height="500" fill="white" stroke="#1a1a1a" stroke-width="3"/>
-  <rect x="240" y="98" width="22" height="55" rx="9" fill="none" stroke="#1a1a1a" stroke-width="4"/>
-  <path d="M255 118 Q292 102 298 82" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M245 118 Q208 102 202 82" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <ellipse cx="250" cy="310" rx="58" ry="155" fill="none" stroke="#1a1a1a" stroke-width="4"/>
-  <ellipse cx="188" cy="318" rx="56" ry="138" fill="none" stroke="#1a1a1a" stroke-width="4"/>
-  <ellipse cx="312" cy="318" rx="56" ry="138" fill="none" stroke="#1a1a1a" stroke-width="4"/>
-  <ellipse cx="132" cy="328" rx="50" ry="115" fill="none" stroke="#1a1a1a" stroke-width="3.5"/>
-  <ellipse cx="368" cy="328" rx="50" ry="115" fill="none" stroke="#1a1a1a" stroke-width="3.5"/>
-  <path d="M100 340 Q250 370 400 340" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-  <text x="250" y="472" font-family="Arial, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#555">Pumpkin</text>
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 460" width="420" height="460">
+  <rect width="420" height="460" fill="white"/>
+  <!-- Stem -->
+  <rect x="197" y="68" width="26" height="60" rx="11" fill="none" stroke="#111" stroke-width="7"/>
+  <!-- Vine tendrils -->
+  <path d="M216 88 Q260 70 268 44" fill="none" stroke="#111" stroke-width="5.5" stroke-linecap="round"/>
+  <path d="M204 88 Q160 70 152 44" fill="none" stroke="#111" stroke-width="5.5" stroke-linecap="round"/>
+  <!-- Leaf -->
+  <path d="M270 44 Q304 38 308 60 Q292 58 270 44Z" fill="none" stroke="#111" stroke-width="5" stroke-linejoin="round"/>
+  <!-- Pumpkin ribs - 5 large lobes -->
+  <ellipse cx="210" cy="298" rx="56" ry="158" fill="none" stroke="#111" stroke-width="9.5"/>
+  <ellipse cx="148" cy="308" rx="54" ry="130" fill="none" stroke="#111" stroke-width="8.5"/>
+  <ellipse cx="272" cy="308" rx="54" ry="130" fill="none" stroke="#111" stroke-width="8.5"/>
+  <ellipse cx="93" cy="318" rx="50" ry="108" fill="none" stroke="#111" stroke-width="7.5"/>
+  <ellipse cx="327" cy="318" rx="50" ry="108" fill="none" stroke="#111" stroke-width="7.5"/>
+  <!-- Equator line -->
+  <path d="M55 330 Q210 364 365 330" fill="none" stroke="#111" stroke-width="5" stroke-linecap="round"/>
+  <text x="210" y="454" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#444">Pumpkin</text>
 </svg>`;
 }
 
 function radishSVG(): string {
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
-  <rect width="500" height="500" fill="white" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M195 90 Q195 60 220 52 Q230 48 240 55" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M195 90 Q195 65 175 58 Q160 55 158 68" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M215 88 Q210 62 230 52 Q245 48 250 58" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M250 88 Q252 62 270 52 Q285 48 288 62" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M268 90 Q275 65 295 58 Q310 56 312 70" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <ellipse cx="250" cy="285" rx="145" ry="155" fill="none" stroke="#1a1a1a" stroke-width="4.5"/>
-  <path d="M250 440 Q245 465 248 480" fill="none" stroke="#1a1a1a" stroke-width="3.5"/>
-  <path d="M220 440 Q210 460 215 475" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-  <path d="M280 440 Q290 460 285 475" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-  <ellipse cx="250" cy="165" rx="30" ry="10" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-  <text x="250" y="500" font-family="Arial, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#555">Radish</text>
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="400" height="480">
+  <rect width="400" height="480" fill="white"/>
+  <!-- Leafy tops - 5 leaves fanning out -->
+  <path d="M182 112 Q178 70 195 46 Q216 24 205 50 Q220 32 200 62 Q215 40 195 72Z" fill="none" stroke="#111" stroke-width="6.5" stroke-linejoin="round"/>
+  <path d="M194 110 Q185 64 195 38 Q200 22 205 38 Q210 24 215 44 Q224 68 218 108Z" fill="none" stroke="#111" stroke-width="6.5" stroke-linejoin="round"/>
+  <path d="M200 110 Q200 68 200 40" fill="none" stroke="#111" stroke-width="5.5" stroke-linecap="round"/>
+  <path d="M206 110 Q215 64 205 38 Q202 22 200 38 Q196 22 204 44 Q196 68 182 108Z" fill="none" stroke="#111" stroke-width="6.5" stroke-linejoin="round"/>
+  <path d="M218 112 Q222 70 205 46 Q184 24 195 50 Q180 32 200 62 Q185 40 205 72Z" fill="none" stroke="#111" stroke-width="6.5" stroke-linejoin="round"/>
+  <!-- Leaf midribs -->
+  <path d="M190 64 Q192 88 194 110" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+  <path d="M210 64 Q208 88 206 110" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+  <!-- Bulb - large and round -->
+  <ellipse cx="200" cy="298" rx="148" ry="158" fill="none" stroke="#111" stroke-width="10"/>
+  <!-- Shoulder line where leaves meet bulb -->
+  <path d="M170 110 Q162 128 152 140" fill="none" stroke="#111" stroke-width="6" stroke-linecap="round"/>
+  <path d="M230 110 Q238 128 248 140" fill="none" stroke="#111" stroke-width="6" stroke-linecap="round"/>
+  <!-- Root tail -->
+  <path d="M200 456 Q196 470 194 480" fill="none" stroke="#111" stroke-width="6" stroke-linecap="round"/>
+  <!-- Side root hairs -->
+  <path d="M168 450 Q160 464 157 472" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+  <path d="M232 450 Q240 464 243 472" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+  <text x="200" y="476" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#444">Radish</text>
 </svg>`;
 }
 
 function asparagusSVG(): string {
-  const stalks = [
-    {x:195, h:350, head:25},
-    {x:225, h:380, head:28},
-    {x:255, h:370, head:26},
-    {x:285, h:355, head:24},
-    {x:315, h:330, head:22},
-  ];
-  const stalkSVG = stalks.map(({x,h,head}) => {
-    const y2 = 430, y1 = y2-h;
-    const scales = [y1+head+10, y1+head+35, y1+head+60, y1+head+85].filter(s=>s<y2-20);
-    const scaleStr = scales.map(sy => `<path d="M${x} ${sy} Q${x-14} ${sy-8} ${x-8} ${sy+10}" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-  <path d="M${x} ${sy} Q${x+14} ${sy-8} ${x+8} ${sy+10}" fill="none" stroke="#1a1a1a" stroke-width="2"/>`).join('');
-    return `<rect x="${x-9}" y="${y1}" width="18" height="${h}" rx="7" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <ellipse cx="${x}" cy="${y1-head/3}" rx="12" ry="${head/2}" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  ${scaleStr}`;
-  }).join('');
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
-  <rect width="500" height="500" fill="white" stroke="#1a1a1a" stroke-width="3"/>
-  ${stalkSVG}
-  <rect x="150" y="430" width="200" height="22" rx="8" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <text x="250" y="490" font-family="Arial, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#555">Asparagus</text>
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="400" height="480">
+  <rect width="400" height="480" fill="white"/>
+  <!-- 5 asparagus spears of varying heights -->
+  <!-- Spear 1 (left, medium) -->
+  <rect x="92" y="105" width="26" height="330" rx="10" fill="none" stroke="#111" stroke-width="7.5"/>
+  <ellipse cx="105" cy="90" rx="16" ry="22" fill="none" stroke="#111" stroke-width="6"/>
+  <path d="M105 118 Q91 128 89 144" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M105 118 Q119 128 121 144" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M105 152 Q91 162 89 178" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M105 152 Q119 162 121 178" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M105 188 Q91 198 89 214" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M105 188 Q119 198 121 214" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Spear 2 (tall) -->
+  <rect x="143" y="70" width="26" height="365" rx="10" fill="none" stroke="#111" stroke-width="7.5"/>
+  <ellipse cx="156" cy="55" rx="16" ry="22" fill="none" stroke="#111" stroke-width="6"/>
+  <path d="M156 84 Q142 94 140 110" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M156 84 Q170 94 172 110" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M156 120 Q142 130 140 146" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M156 120 Q170 130 172 146" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M156 158 Q142 168 140 184" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M156 158 Q170 168 172 184" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M156 196 Q142 206 140 222" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M156 196 Q170 206 172 222" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Spear 3 (tallest, center) -->
+  <rect x="188" y="52" width="26" height="383" rx="10" fill="none" stroke="#111" stroke-width="7.5"/>
+  <ellipse cx="201" cy="37" rx="16" ry="22" fill="none" stroke="#111" stroke-width="6"/>
+  <path d="M201 66 Q187 76 185 92" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M201 66 Q215 76 217 92" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M201 104 Q187 114 185 130" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M201 104 Q215 114 217 130" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M201 142 Q187 152 185 168" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M201 142 Q215 152 217 168" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M201 180 Q187 190 185 206" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M201 180 Q215 190 217 206" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Spear 4 -->
+  <rect x="234" y="72" width="26" height="363" rx="10" fill="none" stroke="#111" stroke-width="7.5"/>
+  <ellipse cx="247" cy="57" rx="16" ry="22" fill="none" stroke="#111" stroke-width="6"/>
+  <path d="M247 86 Q233 96 231 112" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M247 86 Q261 96 263 112" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M247 122 Q233 132 231 148" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M247 122 Q261 132 263 148" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M247 160 Q233 170 231 186" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M247 160 Q261 170 263 186" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Spear 5 (right, shorter) -->
+  <rect x="280" y="110" width="26" height="325" rx="10" fill="none" stroke="#111" stroke-width="7.5"/>
+  <ellipse cx="293" cy="95" rx="16" ry="22" fill="none" stroke="#111" stroke-width="6"/>
+  <path d="M293 124 Q279 134 277 150" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M293 124 Q307 134 309 150" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M293 162 Q279 172 277 188" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M293 162 Q307 172 309 188" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Rubber band / tie -->
+  <rect x="82" y="416" width="236" height="25" rx="10" fill="none" stroke="#111" stroke-width="7.5"/>
+  <text x="200" y="472" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#444">Asparagus</text>
 </svg>`;
 }
 
 function greenBeansSVG(): string {
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
-  <rect width="500" height="500" fill="white" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M80 200 Q100 170 140 168 Q250 155 360 168 Q400 170 420 200 Q440 232 430 258 Q415 290 370 285 Q260 278 140 285 Q100 288 82 258 Q65 232 80 200Z" fill="none" stroke="#1a1a1a" stroke-width="4.5"/>
-  <circle cx="158" cy="228" r="18" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-  <circle cx="208" cy="222" r="18" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-  <circle cx="258" cy="220" r="18" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-  <circle cx="308" cy="222" r="18" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-  <circle cx="355" cy="226" r="16" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-  <path d="M80 200 Q65 165 72 155" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M420 200 Q438 165 428 155" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M250 155 Q248 135 258 120" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-  <text x="250" y="370" font-family="Arial, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#555">Green Beans</text>
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440">
+  <rect width="440" height="440" fill="white"/>
+  <!-- Bean pod 1 - main large horizontal -->
+  <path d="M54 188 Q74 154 120 150 Q240 136 360 150 Q406 154 426 188 Q446 224 432 258 Q416 298 368 294 Q244 278 120 294 Q76 298 56 258 Q38 222 54 188Z" fill="none" stroke="#111" stroke-width="9.5" stroke-linejoin="round"/>
+  <!-- Bean bumps inside -->
+  <circle cx="148" cy="222" r="22" fill="none" stroke="#111" stroke-width="5.5"/>
+  <circle cx="208" cy="216" r="22" fill="none" stroke="#111" stroke-width="5.5"/>
+  <circle cx="268" cy="214" r="22" fill="none" stroke="#111" stroke-width="5.5"/>
+  <circle cx="328" cy="216" r="22" fill="none" stroke="#111" stroke-width="5.5"/>
+  <circle cx="382" cy="222" r="20" fill="none" stroke="#111" stroke-width="5.5"/>
+  <!-- Stem end left -->
+  <path d="M54 188 Q36 148 44 136" fill="none" stroke="#111" stroke-width="7" stroke-linecap="round"/>
+  <!-- Tip end right -->
+  <path d="M426 188 Q448 148 436 134" fill="none" stroke="#111" stroke-width="7" stroke-linecap="round"/>
+  <!-- Bean pod 2 - angled below -->
+  <path d="M88 310 Q108 276 154 270 Q246 258 320 275 Q356 282 370 310 Q384 340 366 362 Q348 382 296 378 Q198 370 118 378 Q82 380 72 355 Q62 332 88 310Z" fill="none" stroke="#111" stroke-width="8.5" stroke-linejoin="round"/>
+  <circle cx="156" cy="328" r="18" fill="none" stroke="#111" stroke-width="5"/>
+  <circle cx="210" cy="322" r="18" fill="none" stroke="#111" stroke-width="5"/>
+  <circle cx="264" cy="320" r="18" fill="none" stroke="#111" stroke-width="5"/>
+  <circle cx="318" cy="322" r="18" fill="none" stroke="#111" stroke-width="5"/>
+  <path d="M88 310 Q72 278 80 265" fill="none" stroke="#111" stroke-width="6" stroke-linecap="round"/>
+  <path d="M370 310 Q388 278 380 265" fill="none" stroke="#111" stroke-width="6" stroke-linecap="round"/>
+  <text x="220" y="434" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#444">Green Beans</text>
 </svg>`;
 }
 
 function peasSVG(): string {
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
-  <rect width="500" height="500" fill="white" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M75 215 Q90 155 200 145 Q250 140 300 145 Q410 155 425 215 Q440 270 415 315 Q390 360 305 365 Q250 370 195 365 Q110 360 85 315 Q60 270 75 215Z" fill="none" stroke="#1a1a1a" stroke-width="4.5"/>
-  <circle cx="148" cy="255" r="38" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <circle cx="218" cy="248" r="38" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <circle cx="288" cy="248" r="38" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <circle cx="356" cy="255" r="36" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M75 215 Q58 178 65 165" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M425 215 Q442 178 435 165" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M250 140 Q248 118 260 105 Q258 118 275 110" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-  <text x="250" y="438" font-family="Arial, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#555">Peas</text>
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440">
+  <rect width="440" height="440" fill="white"/>
+  <!-- Pea pod - large kidney shape -->
+  <path d="M48 220 Q62 148 178 132 Q240 124 300 132 Q414 148 428 220 Q442 278 414 322 Q384 372 296 378 Q240 382 184 378 Q96 372 66 322 Q38 278 48 220Z" fill="none" stroke="#111" stroke-width="10" stroke-linejoin="round"/>
+  <!-- 4 large pea circles inside -->
+  <circle cx="138" cy="255" r="46" fill="none" stroke="#111" stroke-width="6.5"/>
+  <circle cx="216" cy="246" r="46" fill="none" stroke="#111" stroke-width="6.5"/>
+  <circle cx="294" cy="246" r="46" fill="none" stroke="#111" stroke-width="6.5"/>
+  <circle cx="368" cy="255" r="42" fill="none" stroke="#111" stroke-width="6.5"/>
+  <!-- Stem end left -->
+  <path d="M48 220 Q28 172 36 156" fill="none" stroke="#111" stroke-width="7.5" stroke-linecap="round"/>
+  <!-- Curling vine tip right (pointed end) -->
+  <path d="M428 220 Q448 172 440 156" fill="none" stroke="#111" stroke-width="7.5" stroke-linecap="round"/>
+  <!-- Top stem with leaf -->
+  <path d="M240 124 Q238 98 252 82 Q248 98 268 88" fill="none" stroke="#111" stroke-width="6" stroke-linecap="round"/>
+  <text x="220" y="432" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#444">Peas</text>
 </svg>`;
 }
 
 function zucchiniSVG(): string {
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
-  <rect width="500" height="500" fill="white" stroke="#1a1a1a" stroke-width="3"/>
-  <ellipse cx="248" cy="252" rx="90" ry="205" fill="none" stroke="#1a1a1a" stroke-width="4.5"/>
-  <path d="M248 47 Q265 38 270 24 Q255 20 248 28 Q241 20 226 24 Q231 38 248 47Z" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <ellipse cx="248" cy="445" rx="42" ry="12" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-  <path d="M210 100 Q248 92 286 100" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-  <path d="M175 150 Q248 138 321 150" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-  <path d="M162 205 Q248 192 334 205" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-  <path d="M160 258 Q248 245 336 258" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-  <path d="M162 310 Q248 297 334 310" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-  <path d="M175 360 Q248 348 321 360" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-  <path d="M210 405 Q248 395 286 405" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-  <text x="250" y="490" font-family="Arial, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#555">Zucchini</text>
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="400" height="480">
+  <rect width="400" height="480" fill="white"/>
+  <!-- Zucchini body - large vertical oval -->
+  <ellipse cx="200" cy="268" rx="96" ry="210" fill="none" stroke="#111" stroke-width="10"/>
+  <!-- Blossom end at bottom -->
+  <path d="M200 468 Q220 454 232 468 Q220 480 200 482 Q180 480 168 468 Q180 454 200 468Z" fill="none" stroke="#111" stroke-width="5.5" stroke-linejoin="round"/>
+  <!-- Flower top (crown/calyx) -->
+  <path d="M200 58 Q220 48 225 32 Q208 28 200 36 Q192 28 175 32 Q180 48 200 58Z" fill="none" stroke="#111" stroke-width="6.5" stroke-linejoin="round"/>
+  <path d="M177 62 Q160 52 154 38" fill="none" stroke="#111" stroke-width="5.5" stroke-linecap="round"/>
+  <path d="M223 62 Q240 52 246 38" fill="none" stroke="#111" stroke-width="5.5" stroke-linecap="round"/>
+  <!-- Stripe lines down the body -->
+  <path d="M214 88 Q226 95 234 270 Q228 395 218 454" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+  <path d="M186 88 Q174 95 166 270 Q172 395 182 454" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+  <path d="M230 92 Q248 108 256 272 Q250 388 238 450" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+  <path d="M170 92 Q152 108 144 272 Q150 388 162 450" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+  <!-- Horizontal texture marks -->
+  <path d="M116 180 Q200 170 284 180" fill="none" stroke="#111" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M106 242 Q200 232 294 242" fill="none" stroke="#111" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M106 304 Q200 294 294 304" fill="none" stroke="#111" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M114 366 Q200 356 286 366" fill="none" stroke="#111" stroke-width="3.5" stroke-linecap="round"/>
+  <text x="200" y="474" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#444">Zucchini</text>
 </svg>`;
 }
 
