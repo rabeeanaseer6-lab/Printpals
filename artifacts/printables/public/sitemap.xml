@@ -3,79 +3,79 @@
 
   <!-- Main Pages -->
   <url>
-    <loc>https://yourdomain.com/</loc>
+    <loc>https://printplues.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/about</loc>
+    <loc>https://printplues.com/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/contact</loc>
+    <loc>https://printplues.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/privacy-policy</loc>
+    <loc>https://printplues.com/privacy-policy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/terms</loc>
+    <loc>https://printplues.com/terms</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/disclaimer</loc>
+    <loc>https://printplues.com/disclaimer</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <!-- Category Pages -->
   <url>
-    <loc>https://yourdomain.com/category/alphabet</loc>
+    <loc>https://printplues.com/category/alphabet</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/category/numbers</loc>
+    <loc>https://printplues.com/category/numbers</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/category/math</loc>
+    <loc>https://printplues.com/category/math</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/category/shapes</loc>
+    <loc>https://printplues.com/category/shapes</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/category/animals</loc>
+    <loc>https://printplues.com/category/animals</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/category/fruits</loc>
+    <loc>https://printplues.com/category/fruits</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/category/vegetables</loc>
+    <loc>https://printplues.com/category/vegetables</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/category/anatomy</loc>
+    <loc>https://printplues.com/category/anatomy</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/category/planners</loc>
+    <loc>https://printplues.com/category/planners</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
