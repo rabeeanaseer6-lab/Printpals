@@ -1,0 +1,11 @@
+{
+  "buildCommand": "pnpm install && pnpm --filter @workspace/printables run build",
+  "outputDirectory": "artifacts/printables/dist/public",
+  "installCommand": "pnpm install",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
